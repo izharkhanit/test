@@ -1,0 +1,12 @@
+For this I hope you have basic knowledge of Class loader in java.
+How the class loader will load the .class file? In which order?
+
+	class loader-->
+		Bootstrap class loader(rt.jar)-->
+			Extension class loader(ext folder)-->
+				Application class loader
+					(classpath)
+
+when class loader given a call to search .class file,it first searches in bootstrap class loader rt.jar,
+And if it is not there then ext folder i.e  extension class loader.And again if it is not there then Application
+class loader i.e. our classPath
